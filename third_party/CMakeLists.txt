@@ -48,7 +48,7 @@ endif()
 
 # Check SPIRV-Tools after glslang so that it is not linked into glslang and
 # we can control optimizations.
-if (IS_DIRECTORY ${SHADERC_SPIRV_TOOLS_DIR})
+if (IS_DIRECTORY ${SHADERC_SPIRV_TOOLS_DIR} AND NOT TARGET SPIRV-Tools-opt)
   if ("${SHADERC_SKIP_TESTS}")
     # Also skip building tests in SPIRV-Tools.
     set(SPIRV_SKIP_TESTS ON CACHE BOOL "Skip building SPIRV-Tools tests")
