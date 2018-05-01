@@ -6,4 +6,4 @@
 	url = https://github.com/KhronosGroup/SPIRV-Headers
 [submodule "third_party/spirv-tools"]
 	path = third_party/spirv-tools
-	url = https://github.com/KhronosGroup/SPIRV-Tools
+	url = https://github.com/hbirchtree/SPIRV-Tools
